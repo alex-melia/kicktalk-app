@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Jost:wght@200;300;400;500;600&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100&family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.user-details {
+  position: relative;
+}
+
+.user-details::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%; /* Adjust this if your avatar size changes */
+  transform: translateX(-50%);
+  height: calc(100% - 1rem); /* Adjust this value based on your design */
+  width: 2px; /* Line thickness */
+  background-color: #ffffff; /* Line color */
+}
+
+.height-minus-header {
+  min-height: calc(
+    100vh - 3.5rem
+  ); /* 3.5rem is the equivalent of h-14 in TailwindCSS (14 * 0.25rem) */
+}
+
+/* ::-webkit-scrollbar {
+  width: 10px;
+} */
+
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+} */
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} */
+
+.league-image-container {
+  display: flex;
+  align-items: center;
+}
+
+.custom-grid {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto 1fr;
+}

@@ -1,0 +1,14 @@
+node_modules/
+npm-debug.log
+
+logs/
+*.log
+.vercel
+
+backend/node_modules
+frontend/node_modules
+
+backend/config.env
+
+frontend/.env.development
+frontend/.env.production
